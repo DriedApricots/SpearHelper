@@ -1,0 +1,5 @@
+# SpearHelper Opt-In
+# Paper / Purpur / Leaf reset the attack charge as soon as the held item changes, so SpearHelper's spear attack is
+# rejected there (no lunge). true = keep the vanilla / Spigot behaviour for players allowed to use SpearHelper, only
+# when they switch to a spear. false = Paper's default behaviour. Has no effect on Spigot.
+spear-charge-on-paper: true

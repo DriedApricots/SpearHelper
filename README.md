@@ -23,14 +23,15 @@ The permission is reset on every new connection.
 
 ### For server owners
 
-Install the **SpearHelper Opt-In** plugin (`SpearHelperOptIn-1.0.0.jar`, Spigot / Paper) to allow the mod on your server.
+Install the **SpearHelper Opt-In** plugin (`SpearHelperOptIn-1.1.2.jar`, Spigot / Paper) to allow the mod on your server.
 It allows it for every player with the permission `spearhelper.allow` (given to everyone by default; deny it with your
 permissions plugin to keep the mod off for some players). Without the plugin, the mod stays off on your server.
 
-Note: on **Paper** and servers based on it (Purpur, Leaf, ...) the spear attack is not applied even when the mod is
-allowed: Paper resets the attack cooldown as soon as the held item changes
-(`unsupported-settings.update-equipment-on-player-actions`), so the attack made in the same tick is rejected.
-It works on Spigot.
+**Paper** and servers based on it (Purpur, Leaf, ...) reset the attack charge as soon as the held item changes
+(`unsupported-settings.update-equipment-on-player-actions`), so the spear attack made in the same tick would be rejected.
+Since plugin version 1.1.0, `spear-charge-on-paper: true` (config.yml, default) keeps the vanilla behaviour for players
+allowed to use SpearHelper, only when they switch to a spear and right back to the previous slot. Set it to `false` to keep Paper's default. On Spigot it is
+not needed.
 
 ## Download
 
@@ -39,7 +40,7 @@ It works on Spigot.
 | `spearhelper-1.1.0+26.1.x.jar` | client, Minecraft 26.1, 26.1.1, 26.1.2 |
 | `spearhelper-1.1.0+26.2.jar` | client, Minecraft 26.2 |
 | `spearhelper-1.1.0+26.3.jar` | client, Minecraft 26.3 |
-| `SpearHelperOptIn-1.0.0.jar` | server plugin (Spigot / Paper) that allows the mod |
+| `SpearHelperOptIn-1.1.2.jar` | server plugin (Spigot / Paper) that allows the mod |
 
 The client mod requires [Fabric Loader](https://fabricmc.net/), [Fabric API](https://modrinth.com/mod/fabric-api) and Java 25.
 
