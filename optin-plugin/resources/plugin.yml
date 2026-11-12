@@ -1,0 +1,11 @@
+name: SpearHelperOptIn
+version: 1.0.0
+main: spearhelper.optin.SpearHelperOptIn
+api-version: '1.20'
+folia-supported: false
+description: Allows the SpearHelper client mod on this server (server-side opt-in).
+authors: [DriedApricots]
+permissions:
+  spearhelper.allow:
+    description: The SpearHelper client mod is allowed for this player
+    default: true

@@ -1,0 +1,30 @@
+{
+	"schemaVersion": 1,
+	"id": "spearhelper",
+	"version": "@VERSION@",
+	"name": "SpearHelper",
+	"description": "Hold a key: when your attack is charged, it selects the spear in your hotbar, attacks with it and selects your previous slot again. Works in singleplayer; on servers only if the server allows it (server-side opt-in). Port of Spear-Swapper by s0ftpulse.",
+	"authors": [
+		"s0ftpulse"
+	],
+	"contributors": [
+		"DriedApricots (port to 26.x)"
+	],
+	"contact": {
+		"sources": "https://github.com/shuraa-lox/Spear-Swapper"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/spearhelper/icon.png",
+	"environment": "client",
+	"entrypoints": {
+		"client": [
+			"com.s0ftpulse.client.SpearHelperClient"
+		]
+	},
+	"depends": {
+		"fabricloader": "@LOADER@",
+		"minecraft": "@MINECRAFT@",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}
