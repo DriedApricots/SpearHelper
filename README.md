@@ -71,6 +71,12 @@ Loader and the Fabric API modules; see the comment at the top of the script for 
 The plugin in `optin-plugin/` is a single class compiled against the Spigot / Paper API (Java 17+), with `plugin.yml`
 from `optin-plugin/resources`.
 
+## Authors
+
+- [s0ftpulse](https://github.com/shuraa-lox) - original Spear-Swapper / Spear Helper
+- [DriedApricots](https://github.com/DriedApricots) - port and server opt-in plugin
+- [Claude](https://github.com/claude) (Anthropic) - co-author of the port and the plugin
+
 ## License
 
 [CC0-1.0](LICENSE), same as the original mod.
